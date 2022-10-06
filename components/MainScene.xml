@@ -7,8 +7,6 @@
     <script type="text/brightscript" uri="pkg:/source/utils.brs" />
     <children>
 
-        <Timer id='animation_timer' repeat='false' />
-
         <Label
             id="loadingIndicator"
             text="Loading..."

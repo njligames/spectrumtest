@@ -1,15 +1,11 @@
 ' Created by: James Folk
 
 sub Init()
-
     m.rowList = m.top.FindNode("rowList")
 
     m.top.ObserveField("visible", "OnVisibleChange")
 
     m.rowList.SetFocus(true)
-
-    m.rowList.ObserveField("rowItemFocused", "OnItemFocused")
-
 end sub
 
 
@@ -17,9 +13,6 @@ sub OnVisibleChange()
     if m.top.visible = true
     m.rowList.SetFocus(true)
     end if
-end sub
-
-sub OnItemFocused() 
 end sub
 
 function onKeyEvent(key as String, press as Boolean) as Boolean
