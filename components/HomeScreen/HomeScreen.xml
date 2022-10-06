@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright © 2022 by Intellectual Reserve, Inc. All rights reserved. -->
 <!-- Created by: James Folk -->
 
 <component name="HomeScreen" extends="Group"  initialFocus="rowList">
     <script type="text/brightscript" uri="HomeScreen.brs" />
-    <!-- <script type="text/brightscript" uri="pkg:/source/fonts.brs" /> -->
 	 <interface>
-        <!-- Specifies the content for the Grid -->
-        <!-- <field id="eventContent" type="node" alias="eventRowList.content" /> -->
-        <!-- <field id="eventRowItemSelected" type="intarray" alwaysNotify="true" alias="eventRowList.rowItemSelected" /> -->
-
         <field id="jumpToRowItem" type="intarray" alias="rowList.jumpToRowItem" />
 
         <field id="content" type="node" alias="rowList.content" />
@@ -17,25 +11,6 @@
     </interface>
     <children>
 
-        <!-- <RowList
-            itemComponentName="HeroRowListItemComponent"
-            rowTitleComponentName = "DefaultRowTitleComponent"
-
-            id="eventRowList"
-            translation="[ 108, 51 ]"
-
-            itemSize="[ 1110, 720 ]"
-
-            numRows="1"
-            rowHeights     = "[ 372 ]"
-            rowSpacings    = "[ 63 ]"
-            rowItemSize    = "[ [1110, 372] ]"
-            rowItemSpacing = "[ [200,0] ]"
-            rowLabelOffset = "[ [0, 0] ]"
-            showRowLabel   = "[ false ]"
-
-            focusBitmapUri = "pkg:/images/focus.9.png"
-        /> -->
         <RowList
             itemComponentName="RowListItemComponent"
             rowTitleComponentName = "DefaultRowTitleComponent"
@@ -55,67 +30,5 @@
 
             focusBitmapUri = "pkg:/images/focus.9.png"
         />
-        <!-- <Poster
-            id="black_fade"
-            loadDisplayMode="scaleToFill"
-			translation="[0,0]"
-            width="1280"
-            height="720"
-            uri = "pkg:/images/black_fade.png"
-        />
-
-        <Group
-            id="menu"
-            translation="[27,150]"
-        >
-            <Button
-                id = "search_button"
-                translation="[0, 0]"
-                minWidth = "42" 
-                maxWidth = "42"
-                height = "42"
-                iconUri = ""
-                focusedIconUri = ""
-                focusBitmapUri = "pkg:/images/icon_search_pre_selection.png"
-                focusFootprintBitmapUri = "pkg:/images/icon_search_not_selected.png"
-                showFocusFootprint = "true"
-            />
-            <Button
-                id = "home_button"
-                translation="[0, 51]"
-                minWidth = "42" 
-                maxWidth = "42"
-                height = "42"
-                iconUri = ""
-                focusedIconUri = ""
-                focusBitmapUri = "pkg:/images/icon_home_selected_with_focus.png"
-                focusFootprintBitmapUri = "pkg:/images/icon_home_selected.png"
-                showFocusFootprint = "true"
-            />
-            <Button
-                id = "collections_button"
-                translation="[0, 102]"
-                minWidth = "42" 
-                maxWidth = "42"
-                height = "42"
-                iconUri = ""
-                focusedIconUri = ""
-                focusBitmapUri = "pkg:/images/icon_collections_pre_selection.png"
-                focusFootprintBitmapUri = "pkg:/images/icon_collections_not_selected.png"
-                showFocusFootprint = "true"
-            />
-            <Button
-                id = "settings_button"
-                translation="[0, 153]"
-                minWidth = "42" 
-                maxWidth = "42"
-                height = "42"
-                iconUri = ""
-                focusedIconUri = ""
-                focusBitmapUri = "pkg:/images/icon_settings_pre_selection.png"
-                focusFootprintBitmapUri = "pkg:/images/icon_settings_not_selected.png"
-                showFocusFootprint = "true"
-            />
-        </Group> -->
     </children>
 </component>

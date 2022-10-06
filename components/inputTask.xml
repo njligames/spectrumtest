@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright © 2022 by Intellectual Reserve, Inc. All rights reserved. -->
 <!-- Created by: James Folk -->
 
 <component name="inputTask" extends="Task">

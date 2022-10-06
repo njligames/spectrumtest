@@ -1,4 +1,3 @@
-' Copyright © 2022 by Intellectual Reserve, Inc. All rights reserved.
 ' Created by: James Folk
 
 Sub Init()
@@ -16,12 +15,10 @@ sub listenInput()
         print "INPUT EVENT!"
         if msg.isInput()
           inputData = msg.getInfo()
-          'print inputData'
           for each item in inputData
             print item  +": " inputData[item]
           end for
 
-          ' pass the deeplink to UI
           if inputData.DoesExist("mediaType") and inputData.DoesExist("contentID")
             deeplink = {
                 id: inputData.contentID,
