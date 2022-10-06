@@ -1,7 +1,6 @@
 ' Copyright (c) 2018-2021 Roku, Inc. All rights reserved.
 
 sub Init()
-    m.top.findNode("title").font = fonts().getExtraBold(20) 
 end sub
 
 sub onContentSet()

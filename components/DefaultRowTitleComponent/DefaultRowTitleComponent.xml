@@ -8,7 +8,6 @@
     </interface>
 
     <script type="text/brightscript" uri="DefaultRowTitleComponent.brs" />
-    <script type="text/brightscript" uri="pkg:/source/fonts.brs" />
 
     <children>
         <Rectangle

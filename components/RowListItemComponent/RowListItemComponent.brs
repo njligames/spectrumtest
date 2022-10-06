@@ -15,8 +15,6 @@ sub OnContentSet() ' invoked when item metadata retrieved
     if content <> invalid 
         m.top.FindNode("poster").uri = GetImageRenditionUrl(content.images, 250, 141)
 
-        m.titleLabel.font=fonts().getSemiBold(16)
-        m.descriptionLabel.font=fonts().getSemiBold(16)
 
         m.descriptionLabel.text = content.description
 
