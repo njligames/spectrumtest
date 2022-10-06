@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright © 2022 by Intellectual Reserve, Inc. All rights reserved. -->
+<!-- Created by: James Folk -->
+
+<component name="SearchTask" extends="Task">
+    <interface>
+        <field id="content" type="node" />
+    </interface>
+
+    <script type="text/brightscript" uri="SearchTask.brs" />
+
+</component>

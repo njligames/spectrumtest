@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright © 2022 by Intellectual Reserve, Inc. All rights reserved. -->
+<!-- Created by: James Folk -->
+
+<component name="MainScene" extends="Scene">
+    <script type="text/brightscript" uri="MainScene.brs" />
+    <script type="text/brightscript" uri="UILogic/ContentTaskLogic.brs" />
+    <script type="text/brightscript" uri="pkg:/source/utils.brs" />
+    <children>
+
+        <Timer id='animation_timer' repeat='false' />
+
+        <Label
+            id="loadingIndicator"
+            text="Loading..."
+            width="1280"
+            height="720"
+            translation="[0, 0]"
+            horizAlign="center"
+            vertAlign="center"
+            visible="false"
+            font="font:MediumBoldSystemFont"
+        />
+    </children>
+</component>

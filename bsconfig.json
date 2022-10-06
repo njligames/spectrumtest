@@ -1,0 +1,12 @@
+{
+    "plugins": [ "@rokucommunity/bslint" ],
+    "files": [
+        //default entries
+        "source/**/*",
+        "components/**/*",
+        "images/**/*",
+        "manifest",
+        //your custom entries
+        "locale/**/*"
+    ]
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright © 2022 by Intellectual Reserve, Inc. All rights reserved. -->
+<!-- Created by: James Folk -->
+
+<component name="RowListItemComponent" extends="Group" xsi:noNamespaceSchemaLocation="https://devtools.web.roku.com/schema/RokuSceneGraph.xsd">
+    <interface>
+      <field id="itemContent" type="node" onChange="OnContentSet" />
+    </interface>
+    <script type="text/brightscript" uri="RowListItemComponent.brs" />
+    <script type="text/brightscript" uri="pkg:/source/fonts.brs" />
+    <script type="text/brightscript" uri="pkg:/source/utils.brs" />
+    <children>
+        <Poster
+            id="poster"
+            loadDisplayMode="scaleToFill"
+            width="215"
+            height="121"
+        />
+        <Poster
+            id="heroPoster"
+            loadDisplayMode="scaleToFit"
+			translation="[222,0]"
+            width="1110"
+            height="372"
+        />
+        <Poster
+            id="heroPosterOverlay"
+            loadDisplayMode="scaleToFill"
+			translation="[0,0]"
+            width="798"
+            height="371"
+            blendColor="0xFFFFFFFF"
+            uri=""
+        />
+        <Label
+	        id="titleLabel"
+	        width="215"
+			translation="[0,136]"
+	    />
+        <Label
+	        id="descriptionLabel"
+	        wrap="true"
+	        width="215"
+	        numLines="1"
+			translation="[0,156]"
+	    />
+    </children>
+</component>
