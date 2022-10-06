@@ -20,9 +20,6 @@ sub OnVisibleChange()
 end sub
 
 sub OnItemFocused() 
-    focusedIndex = m.rowList.rowItemFocused 
-    row = m.rowList.content.GetChild(focusedIndex[0]) 
-    item = row.GetChild(focusedIndex[1]) 
 end sub
 
 function onKeyEvent(key as String, press as Boolean) as Boolean

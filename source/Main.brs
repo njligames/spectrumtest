@@ -9,7 +9,7 @@ sub ShowChannelRSGScreen(args)
     screen = CreateObject("roSGScreen")
     m.port = CreateObject("roMessagePort")
     screen.SetMessagePort(m.port)
-    scene = screen.CreateScene("MainScene")
+    screen.CreateScene("MainScene")
 
     m.global = screen.getGlobalNode()
     ? "args= "; formatjson(args)

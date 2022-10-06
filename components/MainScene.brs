@@ -36,7 +36,7 @@ end sub
 
 sub handleDeepLink(deeplink as object)             
   if validateDeepLink(deeplink)                         
-    playVideo(m.mediaIndex[deeplink.id].url)            
+    print "playVideo", m.mediaIndex[deeplink.id].url 
   else                                                  
     print "deeplink not validated"                      
   end if                                                
