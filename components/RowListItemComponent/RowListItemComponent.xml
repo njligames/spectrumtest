@@ -10,37 +10,10 @@
     <children>
         <Poster
             id="poster"
-            loadDisplayMode="scaleToFill"
-            width="215"
-            height="121"
-        />
-        <Poster
-            id="heroPoster"
             loadDisplayMode="scaleToFit"
-			translation="[222,0]"
+            translation="[0,0]"
             width="1110"
-            height="372"
+            height="600"
         />
-        <Poster
-            id="heroPosterOverlay"
-            loadDisplayMode="scaleToFill"
-			translation="[0,0]"
-            width="798"
-            height="371"
-            blendColor="0xFFFFFFFF"
-            uri=""
-        />
-        <Label
-	        id="titleLabel"
-	        width="215"
-			translation="[0,136]"
-	    />
-        <Label
-	        id="descriptionLabel"
-	        wrap="true"
-	        width="215"
-	        numLines="1"
-			translation="[0,156]"
-	    />
     </children>
 </component>

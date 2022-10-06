@@ -16,17 +16,17 @@
             rowTitleComponentName = "DefaultRowTitleComponent"
 
             id="rowList"
-            translation="[ 108, 451 ]"
+            translation="[ 30, 39 ]"
 
             itemSize="[ 1110, 720 ]"
 
-            numRows="3"
-            rowHeights     = "[ 177, 177, 177, 177, 177, 177, 177, 177, 177 ]"
-            rowSpacings    = "[ 113, 113, 113, 113, 113, 113, 113, 113, 113 ]"
-            rowItemSize    = "[ [215, 177], [215, 177], [215, 177], [215, 177], [215, 177], [215, 177], [215, 177], [215, 177], [215, 177] ]"
-            rowItemSpacing = "[ [15,0], [15, 0], [15, 0], [15, 0], [15, 0], [15, 0], [15, 0], [15, 0], [15, 0] ]"
-            rowLabelOffset = "[ [0, 13], [0, 13], [0, 13], [0, 13], [0, 13], [0, 13], [0, 13], [0, 13], [0, 13] ]"
-            showRowLabel   = "[ true, true, true, true, true, true, true, true, true ]"
+            numRows="1"
+            rowHeights     = "[ 600 ]"
+            rowSpacings    = "[ 63 ]"
+            rowItemSize    = "[ [1110, 600] ]"
+            rowItemSpacing = "[ [200,0] ]"
+            rowLabelOffset = "[ [0, 0] ]"
+            showRowLabel   = "[ true ]"
 
             focusBitmapUri = "pkg:/images/focus.9.png"
         />

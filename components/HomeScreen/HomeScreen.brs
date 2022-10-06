@@ -19,10 +19,10 @@ sub OnVisibleChange()
     end if
 end sub
 
-sub OnItemFocused() ' invoked when another item is focused
-    focusedIndex = m.rowList.rowItemFocused ' get position of focused item
-    row = m.rowList.content.GetChild(focusedIndex[0]) ' get all items of row
-    item = row.GetChild(focusedIndex[1]) ' get focused item
+sub OnItemFocused() 
+    focusedIndex = m.rowList.rowItemFocused 
+    row = m.rowList.content.GetChild(focusedIndex[0]) 
+    item = row.GetChild(focusedIndex[1]) 
 end sub
 
 function onKeyEvent(key as String, press as Boolean) as Boolean

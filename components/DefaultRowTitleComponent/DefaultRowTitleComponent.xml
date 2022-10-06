@@ -21,6 +21,7 @@
             id="title" 
             width="630" 
             wrap="false" 
+            translation="[0, -3]"
         />
     </children>
 </component>

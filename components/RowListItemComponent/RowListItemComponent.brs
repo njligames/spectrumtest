@@ -1,8 +1,7 @@
 ' Created by: James Folk
 
 sub Init()
-    m.heroPoster = m.top.FindNode("heroPoster")
-    m.heroPosterOverlay = m.top.FindNode("heroPosterOverlay")
+    m.poster = m.top.FindNode("poster")
     m.titleLabel = m.top.FindNode("titleLabel")
     m.descriptionLabel = m.top.FindNode("descriptionLabel")
 end sub
@@ -10,12 +9,6 @@ end sub
 sub OnContentSet()
     content = m.top.itemContent
     if content <> invalid 
-        m.top.FindNode("poster").uri = GetImageRenditionUrl(content.images, 250, 141)
-
-
-        m.descriptionLabel.text = content.description
-
-        m.titleLabel.text = content.title
-
+        m.poster.uri = content.image
     end if
 end sub
