@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by: James Folk -->
+
+<component name="ScreenB" extends="Group"  initialFocus="button">
+    <script type="text/brightscript" uri="ScreenB.brs" />
+    <script type="text/brightscript" uri="pkg:/source/utils.brs" />
+    <interface>
+        <field id="content" type="node" />
+    </interface>
+    <children>
+        <Rectangle
+            id="background"
+            color="0xFF0000"
+        />
+        <Label
+            id="title"
+            color="0xFFFFFF"
+            text=""
+            translation="[0, 21]"
+            horizAlign="center"
+            vertAlign="center"
+            visible="true"
+            height="50"
+            font="font:LargeBoldSystemFont"
+        />
+        <Button
+            id="button"
+            text="Switch Screens"
+        />
+        <Poster
+            id="image"
+            loadDisplayMode="scaleToFit"
+			translation="[0,0]"
+            width="252"
+            height="69"
+        />
+    </children>
+</component>

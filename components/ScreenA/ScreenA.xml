@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by: James Folk -->
+
+<component name="ScreenA" extends="Group"  initialFocus="button">
+    <script type="text/brightscript" uri="ScreenA.brs" />
+    <script type="text/brightscript" uri="pkg:/source/utils.brs" />
+    <interface>
+        <field id="content" type="node" />
+    </interface>
+    <children>
+        <Rectangle
+            id="background"
+            color="0xFFFFFF"
+        />
+        <LabelList
+            id="list"
+            color="0xFFFFFF"
+            translation="[100, 100]"
+            height = "500"
+        />
+        <Label
+            id="title"
+            color="0x000000"
+            text=""
+            translation="[0, 21]"
+            horizAlign="center"
+            vertAlign="center"
+            visible="true"
+            height="50"
+            font="font:LargeBoldSystemFont"
+        />
+        <Button
+            id="button"
+            text="Switch Screens"
+        />
+        <Poster
+            id="image"
+            loadDisplayMode="scaleToFit"
+			translation="[0,0]"
+            width="252"
+            height="69"
+        />
+    </children>
+</component>

@@ -11,12 +11,12 @@ sub ShowChannelRSGScreen(args)
     screen.SetMessagePort(m.port)
     screen.CreateScene("MainScene")
 
-    m.global = screen.getGlobalNode()
-    ? "args= "; formatjson(args)
-    deeplink = getDeepLinks(args)
-    ? "deeplink= "; deeplink
-    m.global.addField("deeplink", "assocarray", false)
-    m.global.deeplink = deeplink
+    ' m.global = screen.getGlobalNode()
+    ' ? "args= "; formatjson(args)
+    ' deeplink = getDeepLinks(args)
+    ' ? "deeplink= "; deeplink
+    ' m.global.addField("deeplink", "assocarray", false)
+    ' m.global.deeplink = deeplink
 
     screen.Show()
 
@@ -29,15 +29,15 @@ sub ShowChannelRSGScreen(args)
     end while
 end sub
 
-function getDeepLinks(args) as Object
-    deeplink = Invalid
+' function getDeepLinks(args) as Object
+'     deeplink = Invalid
 
-    if args.contentid <> Invalid and args.mediaType <> Invalid
-        deeplink = {
-            id: args.contentId,
-            type: args.mediaType
-        }
-    end if
+'     if args.contentid <> Invalid and args.mediaType <> Invalid
+'         deeplink = {
+'             id: args.contentId,
+'             type: args.mediaType
+'         }
+'     end if
 
-    return deeplink
-end function
+'     return deeplink
+' end function

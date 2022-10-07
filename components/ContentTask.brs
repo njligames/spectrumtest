@@ -7,6 +7,7 @@ end sub
 sub GetContent()
     xfer = CreateObject("roURLTransfer")
     xfer.SetCertificatesFile("common:/certs/ca-bundle.crt")
+    xfer.AddHeader("X-Access-Key", "$2b$10$aoACF.9P0WVp1wi8w2P.T.WuxaHxuiqzDvHAjg1WgAit2eXUKfJjy")
     xfer.SetURL(getConstants("HOME_URL"))
     
     rsp = xfer.GetToString()
@@ -15,14 +16,13 @@ sub GetContent()
         rootChildren = []
 
         row = {}
-        row.title = "Public photos of 'puppies' From Flickr"
         row.children = []
 
-        items = json["items"]
-        for each item in items
-            item = GetVideoItem(item)
-            row.children.Push(item)
-        end for
+        record = json["record"]
+
+        row.children.Push(GetItem(record.ScreenA))
+        row.children.Push(GetItem(record.ScreenB))
+
         rootChildren.Push(row)
 
         contentNode = CreateObject("roSGNode", "ContentNode")
@@ -34,3 +34,13 @@ sub GetContent()
     end if
 
 end sub
+
+function GetItem(item as Object) as Object
+
+    videoItem = {}
+    videoItem.title = item.title
+    videoItem.logo = item.logo
+    videoItem.numberSet = item.numberSet
+
+    return videoItem
+end function

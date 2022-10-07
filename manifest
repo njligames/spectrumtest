@@ -1,10 +1,9 @@
 #
 # James Folk
-# Full spec at bit.ly/roku-manifest-file
 #
 
 # Channel Details
-title=Gospel Streaming
+title=Spectrum Test
 major_version=1
 minor_version=0
 build_version=00001
@@ -26,7 +25,7 @@ splash_screen_sd=pkg:/images/splash-screen_sd.jpg
 ui_resolutions=hd
 supports_input_launch=1
 
-splash_color=#000000
+splash_color=#FF0000
 splash_min_time=1
 
 bs_libs_required=roku_ads_lib
