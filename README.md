@@ -15,7 +15,7 @@ Click the `Brightscript Debug: Launch` button.
 
 ### Comments
 * Although I did not test the app on all screen sizes, I wrote the layout so that will respond to the different scren sizes.
-* The comments are setup so that Brightscript Doxygen tool can be run to produce the beautiful Doxygen docuentation.
+* The comments are setup so that my Brightscript Doxygen tool can be run to produce the beautiful Doxygen docuentation.
 
 <img width="1348" alt="Screen Shot 2022-10-08 at 10 39 05 PM" src="https://user-images.githubusercontent.com/16603171/194735144-4faf64ee-257b-4a0f-86eb-f9ce4f15b220.png">
 <img width="1392" alt="Screen Shot 2022-10-08 at 10 38 15 PM" src="https://user-images.githubusercontent.com/16603171/194735146-761c1082-d07b-4263-a2e9-0ce16e9ac3e3.png">
