@@ -12,9 +12,16 @@
             id="background"
             color="0xFF0000"
         />
+        <LabelList
+            id="list"
+            color="0x000000"
+            translation="[100, 100]"
+            itemSize = "[111,33]"
+            textHorizAlign = "center"
+        />
         <Label
             id="title"
-            color="0xFFFFFF"
+            color="0x000000"
             text=""
             translation="[0, 21]"
             horizAlign="center"

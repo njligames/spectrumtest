@@ -14,9 +14,10 @@
         />
         <LabelList
             id="list"
-            color="0xFFFFFF"
+            color="0x000000"
             translation="[100, 100]"
-            height = "500"
+            itemSize = "[111,33]"
+            textHorizAlign = "center"
         />
         <Label
             id="title"
