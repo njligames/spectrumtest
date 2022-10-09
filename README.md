@@ -7,6 +7,9 @@
 I ran and developed by using the [bslint](https://github.com/rokucommunity/bslint) tool in [Visual Studio Code](https://code.visualstudio.com/download) with the Brightscript plugin installed. 
 
 ## How to Run
+Click the `Brightscript Debug: Launch` button. 
+<img width="230" alt="Screen Shot 2022-10-08 at 10 45 57 PM" src="https://user-images.githubusercontent.com/16603171/194735236-3410e209-4eee-4d37-9cab-007a8369ea32.png">
+
 
 ### Comments
 * Although I did not test the app on all screen sizes, I wrote the layout so that will respond to the different scren sizes.
